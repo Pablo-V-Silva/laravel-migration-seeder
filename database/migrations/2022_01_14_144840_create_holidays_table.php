@@ -17,9 +17,10 @@ class CreateHolidaysTable extends Migration
       //
       $table->id();
       $table->string('destination');
-      $table->string('from');
-      $table->date('start_date');
-      $table->date('end_date');
+      $table->string('from')->nullable();
+      $table->date('start_date')->nullable();
+      $table->date('end_date')->nullable();
+      $table->timestamps();
     });
   }
 
