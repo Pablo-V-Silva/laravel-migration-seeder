@@ -1,5 +1,6 @@
 @extends('layout.app')
 
+
 @section('content')
 
 <div class="container">
@@ -11,7 +12,7 @@
         <div class="card_body">
           <img src="https://picsum.photos/200/300" alt="">
         </div>
-        <div class="cardInfo">
+        <div class="card_info">
           <section class="text">
             <h3>{{$holiday->to}} from {{$holiday->from}}</h3>
             <p>Holiday start {{$holiday->start_date}} and finish {{$holiday->end_date}}
