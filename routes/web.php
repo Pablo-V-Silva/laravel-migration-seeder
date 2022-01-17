@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomePageController@index')->name('holidays');
 
-Route::get('/', 'HomePageController@holiday')->name('holiday');
+Route::get('/holiday', 'HomePageController@holiday')->name('holiday');

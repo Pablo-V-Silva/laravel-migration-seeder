@@ -15,13 +15,13 @@ class HolidaySeeder extends Seeder
   {
     for ($i = 0; $i < 32; $i++) {
       # code...
-      $_holiday = new Holiday();
-      $_holiday->to = $faker->word();
-      $_holiday->from = $faker->word();
-      $_holiday->start_date = $faker->date();
-      $_holiday->end_date = $faker->date();
-      $_holiday->price = $faker->numberBetween(1000, 10000);
-      $_holiday->save();
+      $_holidays = new Holiday();
+      $_holidays->to = $faker->word();
+      $_holidays->from = $faker->word();
+      $_holidays->start_date = $faker->date();
+      $_holidays->end_date = $faker->date();
+      $_holidays->price = $faker->numberBetween(1000, 10000);
+      $_holidays->save();
     }
   }
 }

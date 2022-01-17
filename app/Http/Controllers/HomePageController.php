@@ -9,8 +9,8 @@ class HomePageController extends Controller
 {
   public function index()
   {
-
-    return view('welcome');
+    $holidays = Holiday::all();
+    return view('welcome', compact('holidays'));
   }
 
   public function holiday()
